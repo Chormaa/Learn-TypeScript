@@ -1,20 +1,23 @@
 class Animal {
 
+    // Este símbolo: ! , evita la verificación de null o undefined
     private color!: string;
     especie!: string;
     peso!: number;
-    protected tamanio!: string;
+    protected tamanio!: string; // Solo puede ser accedido por otra clase ya que es protegido
 
     constructor() {
         console.log('Creando un animal');
     }
 
+    // El void solo cuándo no hay retorno (return)
     alimentarse(): void {
         console.log('Alimentándome');
     }
 
 }
 
+// La herencia se da gracias a la palabra reservada: extends
 class Acuatico extends Animal {
 
     nadar() {
@@ -31,7 +34,7 @@ class Gato extends Animal {
         console.log('Creando un gato a partir de animal');
     }
 
-    private molestar() {
+    private molestar() { // Signifca que es único de la clase Gato.
         console.log('Pasando por el teclado');
     }
 
