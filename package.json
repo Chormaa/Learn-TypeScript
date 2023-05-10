@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
     "start:exercise-1": "tsc-watch --onSuccess \"node dist/basics/exercise-1/app.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:exercise-2": "tsc-watch --onSuccess \"node dist/basics/exercise-2/poo-basic.js\"",
+    "start:exercise-3": "tsc-watch --onSuccess \"node dist/basics/exercise-3/interfaces.js\"",
+    "start:poo": "tsc-watch --onSuccess \"node dist/poo/main_poo.js\""
   },
   "keywords": [],
   "author": "Juan Diego",
