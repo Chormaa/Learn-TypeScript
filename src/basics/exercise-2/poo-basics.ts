@@ -27,18 +27,18 @@ class Auto {
 
     }
 
-    // Métodos de la clase
-    acelerar() {
-        console.log("Acelerando");
-    }
+ // Métodos de la clase
+ acelerar() {
+    console.log("Acelerando");
+}
 
-    frenar() {
-        console.log("Frenando");
-    }
+frenar() {
+    console.log("Frenando");
+}
 
-    prender() {
-        console.log("Prendiendo");
-    }
+prender() {
+    console.log("Prendiendo");
+}
 }
 
 let ferrari: Auto = new Auto(); //Instancia de la clase Auto - Objeto. //Cuándo se ponen esos () significa que estamos llamando al constructor.  Acá la marca ya es opcional.
@@ -58,26 +58,26 @@ console.log(lambo);
 
 class Auto2 {
 
-    color: string = "Negro"; // Implícita: Por defecto es público
-    public puertas: number; // Explícita: O se puede indicar directamente que es público. Es buena práctica ser explícito e indicarlo.
+color: string = "Negro"; // Implícita: Por defecto es público
+public puertas: number; // Explícita: O se puede indicar directamente que es público. Es buena práctica ser explícito e indicarlo.
 
-    // En el constructor yo puedo crear propiedades de la clase
-    // si y solo si tienen el modificador de acceso (public, private, protected)
+// En el constructor yo puedo crear propiedades de la clase
+// si y solo si tienen el modificador de acceso (public, private, protected)
 
-    // Los parámetros que son opcionales siempre deben ir al final de cualquier método o función
-    // en este caso el constructor es un método
-    constructor(public peso: number, public marca?: string) { //Se indica que la marca y el peso es público implícitamente
-        this.puertas = 4;
-        this.encender();
-    }
+// Los parámetros que son opcionales siempre deben ir al final de cualquier método o función
+// en este caso el constructor es un método
+constructor(public peso: number, public marca?: string) { //Se indica que la marca y el peso es público implícitamente
+    this.puertas = 4;
+    this.encender();
+}
 
-    apagar() {
-        console.log("Apagando");
-    }
+apagar() {
+    console.log("Apagando");
+}
 
-    private encender() {  // Es privado, lo que significa que fuera del constructor, no se puede acceder. Solo se puede ver dentro del constructor de la clase
-        console.log(` Bienvenido ${this.marca}, tu color es ${this.color}, tu peso es ${this.peso} y tienes ${this.puertas} puertas.`);
-    }
+private encender() {  // Es privado, lo que significa que fuera del constructor, no se puede acceder. Solo se puede ver dentro del constructor de la clase
+    console.log(` Bienvenido ${this.marca}, tu color es ${this.color}, tu peso es ${this.peso} y tienes ${this.puertas} puertas.`);
+}
 }
 
 let ford = new Auto2(500, "Ford"); // 500 toma el primer valor (que vendría siendo el peso del Auto2), y ford el segundo valor (que vendría siendo ford del Auto2)

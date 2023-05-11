@@ -30,7 +30,7 @@ console.log(fullName.toUpperCase());
 let countStudents: number = 29;
 let average: number = 4.5;
 
-console.log(average.toFixed())
+console.log(average.toFixed()) // .toFixed() redondea el número.
 
 
 // Array
